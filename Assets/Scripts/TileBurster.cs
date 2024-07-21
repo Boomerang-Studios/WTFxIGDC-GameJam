@@ -4,6 +4,7 @@ public class TileBurster : Singleton<TileBurster>
 {
     public ParticleSystem burstParticleMain;
     public float speed;
+    [SerializeField] CameraShake m_CameraShake;
 
     bool isBursting;
 
@@ -21,6 +22,7 @@ public class TileBurster : Singleton<TileBurster>
         if (collision.GetComponent<TileBurst>())
         {
             collision.GetComponent<TileBurst>().Burst(burstParticleMain);
+            m_CameraShake.Shake();
         }
     }
 }
