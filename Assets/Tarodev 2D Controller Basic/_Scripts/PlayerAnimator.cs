@@ -27,7 +27,9 @@ namespace TarodevController
 
         [Header("Audio Clips")]
         [SerializeField]
-        private AudioClip[] _footsteps;
+        private AudioClip[] _land;
+        [SerializeField]
+        private AudioClip[] _jump;
 
         private AudioSource _source;
         private IPlayerController _player;
@@ -91,7 +93,7 @@ namespace TarodevController
         {
             _anim.SetTrigger(JumpKey);
             _anim.ResetTrigger(GroundedKey);
-
+            _source.PlayOneShot(_jump[Random.Range(0, _jump.Length)]);
 
             if (_grounded) // Avoid coyote
             {
@@ -111,7 +113,7 @@ namespace TarodevController
                 SetColor(_landParticles);
 
                 _anim.SetTrigger(GroundedKey);
-                _source.PlayOneShot(_footsteps[Random.Range(0, _footsteps.Length)]);
+                _source.PlayOneShot(_land[Random.Range(0, _land.Length)]);
                 _moveParticles.Play();
 
                 _landParticles.transform.localScale = Vector3.one * Mathf.InverseLerp(0, 40, impact);

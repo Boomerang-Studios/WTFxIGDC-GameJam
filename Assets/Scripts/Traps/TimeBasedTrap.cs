@@ -4,29 +4,32 @@ using UnityEngine;
 
 public class TimeBasedTrap : MonoBehaviour
 {
+    [SerializeField] GameObject trap;
     [SerializeField] private float _triggerTime = 3f;
+    Animator _animator;
+    bool triggered = false;
 
-    [Header("Effect")]
-    [SerializeField] private ParticleSystem _warningEffect;
-    
+    private void OnEnable()
+    {
+        _animator = GetComponent<Animator>();
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && !triggered)
         {
-            // add Fuse Effect here
-            StartCoroutine(TriggerAfterSec());
-            _warningEffect.Play();
+            triggered = true;
+            _animator.SetTrigger("Start");
         }
     }
-    
-    private IEnumerator TriggerAfterSec()
+    private void CountDown()
     {
-        yield return new WaitForSeconds(_triggerTime);
-        Explode();
+        SoundManager.Instance.PlaySoundEffect(SFX.CountDown);
     }
-    
     private void Explode()
     {
+        SoundManager.Instance.PlaySoundEffect(SFX.SensorBlast);
         TileBurster.Instance.StartBursting();
+        Instantiate(trap, transform.position, Quaternion.identity);
+        transform.parent.gameObject.SetActive(false);
     }
 }

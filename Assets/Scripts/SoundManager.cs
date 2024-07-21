@@ -4,7 +4,7 @@ using UnityEngine;
 
 public enum SFX
 {
-    UIClick, BlockExplode, GameOver, GameStart, Trap
+    UIClick, BlockExplode, GameOver, GameStart, Trap, Collectable, CountDown, SensorBlast
 }
 [System.Serializable]
 public class Sounds

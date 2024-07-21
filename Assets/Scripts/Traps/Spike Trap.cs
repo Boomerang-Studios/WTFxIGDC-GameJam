@@ -8,6 +8,7 @@ public class SpikeTrap : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            print("plater ded");
             //collision.gameObject.GetComponent<Player>().KillPlayer();
         }
     }
