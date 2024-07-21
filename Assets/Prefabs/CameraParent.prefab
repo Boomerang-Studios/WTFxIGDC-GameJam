@@ -110,19 +110,19 @@ MonoBehaviour:
   predefinedModel: 0
   blurSize: 0.7
   blurStrength: 0.6
-  bleedingSize: 0.75
-  bleedingStrength: 0.5
-  chromaticAberrationOffset: 1.25
+  bleedingSize: 0.356
+  bleedingStrength: 0.356
+  chromaticAberrationOffset: 0
   RGBMaskIntensivity: 0.4
   RGBMaskStrength: 0.4
   RGBMaskBleeding: 0.1
   colorNoiseMode: 0
-  colorNoiseStrength: 0.197
-  whiteNoiseMode: 4
-  whiteNoiseStrength: 0.299
+  colorNoiseStrength: 0.182
+  whiteNoiseMode: 5
+  whiteNoiseStrength: 0.314
   darkestLevel: {r: 0, g: 0, b: 0, a: 1}
   brightestLevel: {r: 0.92156863, g: 0.92156863, b: 0.92156863, a: 1}
-  darkestColor: {r: 0.09803922, g: 0.09803922, b: 0.09803922, a: 1}
+  darkestColor: {r: 0.007843138, g: 0.007843138, b: 0.007843138, a: 1}
   brightestColor: {r: 1, g: 1, b: 1, a: 1}
   brightness: 0.1
   contrast: 0.1
@@ -177,7 +177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fffb230c88cc7642bdb5289f1c960f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  magnitude: 0.25
+  magnitude: 0.1
   duration: 0.3
 --- !u!1 &3187583775705582806
 GameObject:
@@ -226,5 +226,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   leftEdge: {x: 0, y: 0, z: -10}
-  rightEdge: {x: 18.03, y: 0, z: -10}
+  rightEdge: {x: 23.39, y: 0, z: -10}
   followSpeed: 1
