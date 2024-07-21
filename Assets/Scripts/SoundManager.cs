@@ -51,7 +51,8 @@ public class SoundManager : Singleton<SoundManager>
         if (m_sfxSource == null)
             m_sfxSource = GetComponent<AudioSource>();
         TimeBasedTrap.SwitchToSpike += SwitchToExplosion;
-      
+        sfxVolume = PlayerPrefs.GetFloat("EffectsVolume", 1);
+        bgmVolume = PlayerPrefs.GetFloat("MusicVolume", 1);
     }
     private void OnLevelWasLoaded()
     {
@@ -61,6 +62,36 @@ public class SoundManager : Singleton<SoundManager>
     {
         TimeBasedTrap.SwitchToSpike += SwitchToExplosion;
     }
+    
+    public void ChangeMusicVolume(float valueToAdd)
+    {
+        bgmVolume += valueToAdd;
+        if(bgmVolume < 0)
+        {
+            bgmVolume = 0;
+        }else if(bgmVolume > 1)
+        {
+            bgmVolume = 1;
+        }
+        m_musicSource.volume = bgmVolume;
+        PlayerPrefs.SetFloat("MusicVolume", bgmVolume);
+    }
+    
+    public void ChangeEffectsVolume(float valueToAdd)
+    {
+        sfxVolume += valueToAdd;
+
+        if(sfxVolume < 0)
+        {
+            sfxVolume = 0;
+        }else if(sfxVolume > 1)
+        {
+            sfxVolume = 1;
+        }
+        m_sfxSource.volume = sfxVolume;
+        PlayerPrefs.SetFloat("EffectsVolume", sfxVolume);
+    }
+    
     public void PlaySoundEffect(SFX sfx)
     {
         if (muted) return;
