@@ -10,13 +10,9 @@ public class OutOfBound : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            StartCoroutine(SceneReload());
+            //StartCoroutine(SceneReload());
+            TileBurster.Instance.Reset();
         }
     }
-
-    IEnumerator SceneReload()
-    {
-        yield return delay;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
+    
 }
