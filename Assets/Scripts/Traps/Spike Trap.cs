@@ -16,7 +16,8 @@ public class SpikeTrap : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            SceneLoadingManager.Instance.ReloadCurrentScene();
+            TileBurster.Instance.Reset();
+            //SceneLoadingManager.Instance.ReloadCurrentScene();
         }
     }
     public void Burst(ParticleSystem burstParticleMain)

@@ -13,7 +13,6 @@ public class ScoreManager : Singleton<ScoreManager>
     protected override void Awake()
     {
         base.Awake();
-        DontDestroyOnLoad(this);
     }
     public void AddScore(int scoreToAdd)
     {

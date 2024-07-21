@@ -5,8 +5,6 @@ using UnityEngine;
 public class ScoreUI : MonoBehaviour
 {
     [SerializeField] TMPro.TextMeshProUGUI scoreText;
-    [SerializeField] ParticleSystem collectableEffect;
-
     private void Start()
     {
         ScoreManager.Instance.OnScoreChanged += UpdateScore;
