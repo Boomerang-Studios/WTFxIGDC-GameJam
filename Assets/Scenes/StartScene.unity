@@ -6009,6 +6009,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 173774805077934472, guid: 722e89a0d201f5e46b0f0995f89ff5ce, type: 3}
+      propertyPath: m_LoadNextScene
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 173774805077934472, guid: 722e89a0d201f5e46b0f0995f89ff5ce, type: 3}
+      propertyPath: m_SceneIndexToLoad
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 785754701680309694, guid: 722e89a0d201f5e46b0f0995f89ff5ce, type: 3}
       propertyPath: m_Name
       value: Credits
@@ -6819,6 +6827,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 173774805077934472, guid: 722e89a0d201f5e46b0f0995f89ff5ce, type: 3}
+      propertyPath: m_SceneIndexToLoad
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 785754701680309694, guid: 722e89a0d201f5e46b0f0995f89ff5ce, type: 3}
       propertyPath: m_Name
       value: Game Start
