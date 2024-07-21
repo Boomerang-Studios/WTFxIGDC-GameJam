@@ -17,11 +17,6 @@ public class Sounds
 
 public class SoundManager : Singleton<SoundManager>
 {
-    private void Awake()
-    {
-        Instance = this;
-    }
-
     [Header("Mute")]
     [SerializeField]
     private bool muted;
