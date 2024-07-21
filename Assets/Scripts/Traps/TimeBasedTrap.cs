@@ -7,6 +7,7 @@ public class TimeBasedTrap : MonoBehaviour
     [SerializeField] private float _triggerTime = 3f;
     Animator _animator;
     bool triggered = false;
+    bool switchTrap = false;
 
     public static Action SensorTriggered;
     public static Action SwitchToSpike;
@@ -27,6 +28,7 @@ public class TimeBasedTrap : MonoBehaviour
         if (collision.CompareTag("Player") && !triggered)
         {
             triggered = true;
+            switchTrap = true;
             _animator.SetTrigger("Start");
             SensorTriggered?.Invoke();
             Invoke(nameof(SwitchTraps), 1f);
@@ -53,7 +55,7 @@ public class TimeBasedTrap : MonoBehaviour
     }
     private void SwitchTrap()
     {
-        if (triggered) return;
+        if (switchTrap) return;
         Instantiate(trap, transform.position, Quaternion.identity);
         transform.parent.gameObject.SetActive(false);
     }
