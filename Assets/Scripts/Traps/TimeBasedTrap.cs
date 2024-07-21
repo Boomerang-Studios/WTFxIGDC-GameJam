@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TimeBasedTrap : MonoBehaviour
@@ -27,8 +25,12 @@ public class TimeBasedTrap : MonoBehaviour
         {
             triggered = true;
             _animator.SetTrigger("Start");
-            SensorTriggered?.Invoke();
+            Invoke(nameof(SwitchTraps), 1f);
         }
+    }
+    private void SwitchTraps()
+    {
+        SensorTriggered?.Invoke();
     }
     private void CountDown()
     {
