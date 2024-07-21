@@ -8421,40 +8421,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a065026f2ae6472daeb36a14acb7838, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  predefinedModel: 5
-  blurSize: 0.9
-  blurStrength: 0.8
-  bleedingSize: 0.95
-  bleedingStrength: 0.95
-  chromaticAberrationOffset: 1.9
-  RGBMaskIntensivity: 0.7
-  RGBMaskStrength: 0.7
-  RGBMaskBleeding: 0.3
+  predefinedModel: 0
+  blurSize: 0.7
+  blurStrength: 0.6
+  bleedingSize: 0.75
+  bleedingStrength: 0.5
+  chromaticAberrationOffset: 1.25
+  RGBMaskIntensivity: 0.4
+  RGBMaskStrength: 0.4
+  RGBMaskBleeding: 0.1
   colorNoiseMode: 0
-  colorNoiseStrength: 0.5
-  whiteNoiseMode: 5
-  whiteNoiseStrength: 0.55
+  colorNoiseStrength: 0.197
+  whiteNoiseMode: 4
+  whiteNoiseStrength: 0.299
   darkestLevel: {r: 0, g: 0, b: 0, a: 1}
   brightestLevel: {r: 0.92156863, g: 0.92156863, b: 0.92156863, a: 1}
-  darkestColor: {r: 0.13725491, g: 0.13725491, b: 0.13725491, a: 1}
-  brightestColor: {r: 0.9607843, g: 1, b: 1, a: 1}
-  brightness: 0
-  contrast: -0.1
+  darkestColor: {r: 0.09803922, g: 0.09803922, b: 0.09803922, a: 1}
+  brightestColor: {r: 1, g: 1, b: 1, a: 1}
+  brightness: 0.1
+  contrast: 0.1
   saturation: -0.05
-  interferenceWidth: 35
-  interferenceSpeed: 2
-  interferenceStrength: 0.075
+  interferenceWidth: 25
+  interferenceSpeed: 3
+  interferenceStrength: 0
   interferenceSplit: 0.25
-  maskMode: 0
-  maskStrength: 0.75
-  curvatureX: 0.625
-  curvatureY: 0.625
-  overscan: 0.1
-  vignetteSize: 0.4
-  vignetteStrength: 0.5
+  maskMode: 1
+  maskStrength: 0.25
+  curvatureX: 0.3
+  curvatureY: 0.3
+  overscan: 0.026
+  vignetteSize: 0.349
+  vignetteStrength: 0.189
   textureScaling: 2
   scalingPolicy: 2
-  textureSize: 768
+  textureSize: 471
   otherCameras: []
 --- !u!1 &1250540109
 GameObject:
