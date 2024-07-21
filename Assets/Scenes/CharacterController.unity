@@ -8306,6 +8306,8 @@ GameObject:
   - component: {fileID: 1243309704}
   - component: {fileID: 1243309703}
   - component: {fileID: 1243309702}
+  - component: {fileID: 1243309706}
+  - component: {fileID: 1243309705}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -8387,6 +8389,73 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1243309705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243309701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e188ee899633d0b49870a5ae38b7359d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ratio: {x: 16, y: 9}
+  forceRatioOnAwake: 1
+  listenForWindowChanges: 1
+  createCameraForLetterBoxRendering: 1
+  findCamerasAutomatically: 1
+  letterBoxCameraColor: {r: 0, g: 0, b: 0, a: 1}
+  cameras: []
+  letterBoxCamera: {fileID: 0}
+--- !u!114 &1243309706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243309701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a065026f2ae6472daeb36a14acb7838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  predefinedModel: 5
+  blurSize: 0.9
+  blurStrength: 0.8
+  bleedingSize: 0.95
+  bleedingStrength: 0.95
+  chromaticAberrationOffset: 1.9
+  RGBMaskIntensivity: 0.7
+  RGBMaskStrength: 0.7
+  RGBMaskBleeding: 0.3
+  colorNoiseMode: 0
+  colorNoiseStrength: 0.5
+  whiteNoiseMode: 5
+  whiteNoiseStrength: 0.55
+  darkestLevel: {r: 0, g: 0, b: 0, a: 1}
+  brightestLevel: {r: 0.92156863, g: 0.92156863, b: 0.92156863, a: 1}
+  darkestColor: {r: 0.13725491, g: 0.13725491, b: 0.13725491, a: 1}
+  brightestColor: {r: 0.9607843, g: 1, b: 1, a: 1}
+  brightness: 0
+  contrast: -0.1
+  saturation: -0.05
+  interferenceWidth: 35
+  interferenceSpeed: 2
+  interferenceStrength: 0.075
+  interferenceSplit: 0.25
+  maskMode: 0
+  maskStrength: 0.75
+  curvatureX: 0.625
+  curvatureY: 0.625
+  overscan: 0.1
+  vignetteSize: 0.4
+  vignetteStrength: 0.5
+  textureScaling: 2
+  scalingPolicy: 2
+  textureSize: 768
+  otherCameras: []
 --- !u!1 &1250540109
 GameObject:
   m_ObjectHideFlags: 0
