@@ -8,6 +8,7 @@ public class Collectable : MonoBehaviour
     [SerializeField] private ParticleSystem collectableEffect;
 
     SpriteRenderer spriteRenderer;
+    Collider2D col;
     bool collected = false;
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -16,10 +17,13 @@ public class Collectable : MonoBehaviour
             collected = true;
             spriteRenderer = GetComponent<SpriteRenderer>();
             spriteRenderer.enabled = false;
+            col = GetComponent<Collider2D>();
+            col.enabled = false;
+
             SoundManager.Instance.PlaySoundEffect(SFX.Collectable);
             if (collectableEffect)
                 collectableEffect.Play();
-            Invoke(nameof(Collected), 0.2f);
+            Invoke(nameof(Collected), 1f);
             if (ScoreManager.Instance)
             {
                 ScoreManager.Instance.AddScore(scoreToAdd);
