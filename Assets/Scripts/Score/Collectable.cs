@@ -7,16 +7,27 @@ public class Collectable : MonoBehaviour
     [SerializeField] private int scoreToAdd = 1;
     [SerializeField] private ParticleSystem collectableEffect;
 
+    SpriteRenderer spriteRenderer;
+    bool collected = false;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && !collected)
         {
-            ScoreManger.Instance.AddScore(scoreToAdd);
+            collected = true;
+            spriteRenderer = GetComponent<SpriteRenderer>();
+            spriteRenderer.enabled = false;
             SoundManager.Instance.PlaySoundEffect(SFX.Collectable);
             if (collectableEffect)
-                ScoreManger.Instance.PlayCollectableEffect(collectableEffect, transform.position);
-
-            gameObject.SetActive(false);
+                collectableEffect.Play();
+            if (ScoreManger.Instance)
+            {
+                ScoreManger.Instance.AddScore(scoreToAdd);
+            }
         }
+    }
+
+    void Collected()
+    {
+        gameObject.SetActive(false);
     }
 }
