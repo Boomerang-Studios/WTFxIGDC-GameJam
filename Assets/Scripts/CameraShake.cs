@@ -8,7 +8,7 @@ public class CameraShake : MonoBehaviour
 
     public static CameraShake instance;
     Vector3 originalPos;
-    public float magnitude;
+    private float magnitudeVal = 0.1f;
     public float duration;
     Coroutine coroutine;
 
@@ -43,8 +43,8 @@ public class CameraShake : MonoBehaviour
 
         while (elapsed < duration)
         {
-            float x = Random.Range(-1f, 1f) * magnitude;
-            float y = Random.Range(-1f, 1f) * magnitude;
+            float x = Random.Range(-1f, 1f) * magnitudeVal;
+            float y = Random.Range(-1f, 1f) * magnitudeVal;
 
             transform.localPosition = new Vector3(x, y, originalPos.z);
 

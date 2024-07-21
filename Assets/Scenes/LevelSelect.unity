@@ -253,7 +253,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Shubham Drolia
+  m_text: 3
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a6fdb35f52832747bba701fe00b3c0a, type: 2}
   m_sharedMaterial: {fileID: 4975695151440475460, guid: 3a6fdb35f52832747bba701fe00b3c0a, type: 2}
@@ -723,7 +723,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Gaurav Pratap Singh
+  m_text: 1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a6fdb35f52832747bba701fe00b3c0a, type: 2}
   m_sharedMaterial: {fileID: 4975695151440475460, guid: 3a6fdb35f52832747bba701fe00b3c0a, type: 2}
@@ -1163,7 +1163,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Nitish Kapur
+  m_text: 2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a6fdb35f52832747bba701fe00b3c0a, type: 2}
   m_sharedMaterial: {fileID: 4975695151440475460, guid: 3a6fdb35f52832747bba701fe00b3c0a, type: 2}
@@ -6799,7 +6799,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Satvik Nagpal
+  m_text: 5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a6fdb35f52832747bba701fe00b3c0a, type: 2}
   m_sharedMaterial: {fileID: 4975695151440475460, guid: 3a6fdb35f52832747bba701fe00b3c0a, type: 2}
@@ -7823,7 +7823,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Prashant gupta
+  m_text: 4
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a6fdb35f52832747bba701fe00b3c0a, type: 2}
   m_sharedMaterial: {fileID: 4975695151440475460, guid: 3a6fdb35f52832747bba701fe00b3c0a, type: 2}
@@ -8583,7 +8583,7 @@ GameObject:
   - component: {fileID: 5327170375689288635}
   - component: {fileID: 1929143598}
   m_Layer: 0
-  m_Name: Goal_Shubham
+  m_Name: Level-3
   m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8602,7 +8602,7 @@ GameObject:
   - component: {fileID: 5327170375571478359}
   - component: {fileID: 2078394818}
   m_Layer: 0
-  m_Name: Goal_Nitish
+  m_Name: Level-2
   m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8621,7 +8621,7 @@ GameObject:
   - component: {fileID: 5327170375297228026}
   - component: {fileID: 1268679279}
   m_Layer: 0
-  m_Name: Goal_Gaurav
+  m_Name: Level-1
   m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8640,7 +8640,7 @@ GameObject:
   - component: {fileID: 5327170373984478409}
   - component: {fileID: 425310818}
   m_Layer: 0
-  m_Name: Goal_Satvik
+  m_Name: Level-5
   m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8659,7 +8659,7 @@ GameObject:
   - component: {fileID: 5327170373868486957}
   - component: {fileID: 2093512491}
   m_Layer: 0
-  m_Name: Goal_Prashant
+  m_Name: Level-4
   m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

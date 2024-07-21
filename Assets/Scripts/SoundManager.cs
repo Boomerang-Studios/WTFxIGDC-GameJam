@@ -62,36 +62,38 @@ public class SoundManager : Singleton<SoundManager>
     {
         TimeBasedTrap.SwitchToSpike += SwitchToExplosion;
     }
-    
+
     public void ChangeMusicVolume(float valueToAdd)
     {
         bgmVolume += valueToAdd;
-        if(bgmVolume < 0)
+        if (bgmVolume < 0)
         {
             bgmVolume = 0;
-        }else if(bgmVolume > 1)
+        }
+        else if (bgmVolume > 1)
         {
             bgmVolume = 1;
         }
         m_musicSource.volume = bgmVolume;
         PlayerPrefs.SetFloat("MusicVolume", bgmVolume);
     }
-    
+
     public void ChangeEffectsVolume(float valueToAdd)
     {
         sfxVolume += valueToAdd;
 
-        if(sfxVolume < 0)
+        if (sfxVolume < 0)
         {
             sfxVolume = 0;
-        }else if(sfxVolume > 1)
+        }
+        else if (sfxVolume > 1)
         {
             sfxVolume = 1;
         }
         m_sfxSource.volume = sfxVolume;
         PlayerPrefs.SetFloat("EffectsVolume", sfxVolume);
     }
-    
+
     public void PlaySoundEffect(SFX sfx)
     {
         if (muted) return;
@@ -150,6 +152,7 @@ public class SoundManager : Singleton<SoundManager>
     }
     void ToggleAudio(bool mute)
     {
+        if (!m_musicSource) return;
         if (mute)
         {
             m_musicSource.Pause();
@@ -161,11 +164,13 @@ public class SoundManager : Singleton<SoundManager>
     }
     private void SwitchToExplosion()
     {
+        if (!m_musicSource) return;
         m_musicSource.clip = explosionBGM;
         m_musicSource.Play();
     }
     public void PlayMusic()
     {
+        if (!m_musicSource) return;
         m_musicSource.clip = normalBGM;
         m_musicSource.loop = true;
         m_musicSource.playOnAwake = true;
