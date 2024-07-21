@@ -19,6 +19,7 @@ public class Collectable : MonoBehaviour
             SoundManager.Instance.PlaySoundEffect(SFX.Collectable);
             if (collectableEffect)
                 collectableEffect.Play();
+            Invoke(nameof(Collected), 0.2f);
             if (ScoreManager.Instance)
             {
                 ScoreManager.Instance.AddScore(scoreToAdd);
