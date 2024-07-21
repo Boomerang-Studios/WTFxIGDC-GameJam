@@ -1,32 +1,52 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class TimeBasedTrap : MonoBehaviour
 {
+    [SerializeField] GameObject trap;
     [SerializeField] private float _triggerTime = 3f;
+    Animator _animator;
+    bool triggered = false;
 
-    [Header("Effect")]
-    [SerializeField] private ParticleSystem _warningEffect;
-    
+    public static Action SensorTriggered;
+
+    private void OnEnable()
+    {
+        _animator = GetComponent<Animator>();
+        TimeBasedTrap.SensorTriggered += SwitchTrap;
+    }
+    private void OnDisable()
+    {
+        TimeBasedTrap.SensorTriggered -= SwitchTrap;
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && !triggered)
         {
-            // add Fuse Effect here
-            StartCoroutine(TriggerAfterSec());
-            _warningEffect.Play();
+            triggered = true;
+            _animator.SetTrigger("Start");
+            Invoke(nameof(SwitchTraps), 1f);
         }
     }
-    
-    private IEnumerator TriggerAfterSec()
+    private void SwitchTraps()
     {
-        yield return new WaitForSeconds(_triggerTime);
-        Explode();
+        SensorTriggered?.Invoke();
     }
-    
+    private void CountDown()
+    {
+        SoundManager.Instance.PlaySoundEffect(SFX.CountDown);
+    }
     private void Explode()
     {
+        SoundManager.Instance.PlaySoundEffect(SFX.SensorBlast);
         TileBurster.Instance.StartBursting();
+        Instantiate(trap, transform.position, Quaternion.identity);
+        transform.parent.gameObject.SetActive(false);
+    }
+    private void SwitchTrap()
+    {
+        if (triggered) return;
+        Instantiate(trap, transform.position, Quaternion.identity);
+        transform.parent.gameObject.SetActive(false);
     }
 }

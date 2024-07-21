@@ -12,10 +12,10 @@ public class Collectable : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             ScoreManger.Instance.AddScore(scoreToAdd);
-            
-            if(collectableEffect)
-                ScoreManger.Instance.PlayCollectableEffect(collectableEffect,transform.position);
-            
+            SoundManager.Instance.PlaySoundEffect(SFX.Collectable);
+            if (collectableEffect)
+                ScoreManger.Instance.PlayCollectableEffect(collectableEffect, transform.position);
+
             gameObject.SetActive(false);
         }
     }
