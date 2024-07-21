@@ -9,15 +9,18 @@ public class TimeBasedTrap : MonoBehaviour
     bool triggered = false;
 
     public static Action SensorTriggered;
+    public static Action SwitchToSpike;
 
     private void OnEnable()
     {
         _animator = GetComponent<Animator>();
-        TimeBasedTrap.SensorTriggered += SwitchTrap;
+        TimeBasedTrap.SwitchToSpike += SwitchTrap;
+        TimeBasedTrap.SensorTriggered += Triggered;
     }
     private void OnDisable()
     {
-        TimeBasedTrap.SensorTriggered -= SwitchTrap;
+        TimeBasedTrap.SwitchToSpike -= SwitchTrap;
+        TimeBasedTrap.SensorTriggered += Triggered;
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -25,12 +28,17 @@ public class TimeBasedTrap : MonoBehaviour
         {
             triggered = true;
             _animator.SetTrigger("Start");
+            SensorTriggered?.Invoke();
             Invoke(nameof(SwitchTraps), 1f);
         }
     }
     private void SwitchTraps()
     {
-        SensorTriggered?.Invoke();
+        SwitchToSpike?.Invoke();
+    }
+    private void Triggered()
+    {
+        triggered = true;
     }
     private void CountDown()
     {
