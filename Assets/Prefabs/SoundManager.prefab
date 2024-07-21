@@ -175,6 +175,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   muted: 0
+  normalBGM: {fileID: 8300000, guid: 207adfad864be074b8d525757f9b6593, type: 3}
+  explosionBGM: {fileID: 8300000, guid: efedde3e606d2ce4dbf4f16137a48393, type: 3}
   m_musicSource: {fileID: 5729173604572875369}
   bgmVolume: 1
   m_sfxSource: {fileID: 2287468043444081507}

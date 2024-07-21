@@ -4,7 +4,6 @@ using UnityEngine;
 public class TimeBasedTrap : MonoBehaviour
 {
     [SerializeField] GameObject trap;
-    [SerializeField] private float _triggerTime = 3f;
     Animator _animator;
     bool triggered = false;
     bool switchTrap = false;

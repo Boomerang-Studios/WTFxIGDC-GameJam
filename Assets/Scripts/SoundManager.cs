@@ -25,6 +25,10 @@ public class SoundManager : Singleton<SoundManager>
 
     [Header("BGM")]
     [SerializeField]
+    private AudioClip normalBGM;
+    [SerializeField]
+    private AudioClip explosionBGM;
+    [SerializeField]
     private AudioSource m_musicSource;
     [SerializeField, Range(0f, 1f)]
     private float bgmVolume;
@@ -45,9 +49,12 @@ public class SoundManager : Singleton<SoundManager>
     {
         if (m_sfxSource == null)
             m_sfxSource = GetComponent<AudioSource>();
-        PlayMusic();
+        TimeBasedTrap.SwitchToSpike += SwitchToExplosion;
     }
-
+    private void OnDisable()
+    {
+        TimeBasedTrap.SwitchToSpike += SwitchToExplosion;
+    }
     public void PlaySoundEffect(SFX sfx)
     {
         if (muted) return;
@@ -82,8 +89,13 @@ public class SoundManager : Singleton<SoundManager>
 
     protected override void Awake()
     {
-            base.Awake();
-            DontDestroyOnLoad(this);
+        base.Awake();
+        DontDestroyOnLoad(this.gameObject);
+    }
+    private void Start()
+    {
+        PlayMusic();
+
     }
 
     public void PlayTest()
@@ -94,7 +106,7 @@ public class SoundManager : Singleton<SoundManager>
     IEnumerator WaitForSFX(float delay, AudioSource source)
     {
         yield return new WaitForSeconds(delay);
-        if(source != null)
+        if (source != null)
         {
             Destroy(source.gameObject);
         }
@@ -110,11 +122,18 @@ public class SoundManager : Singleton<SoundManager>
             m_musicSource.Play();
         }
     }
-    private void PlayMusic()
+    private void SwitchToExplosion()
     {
+        m_musicSource.clip = explosionBGM;
+        m_musicSource.Play();
+    }
+    public void PlayMusic()
+    {
+        m_musicSource.clip = normalBGM;
         m_musicSource.loop = true;
         m_musicSource.playOnAwake = true;
         m_musicSource.volume = bgmVolume;
+        m_musicSource.Play();
     }
     // interpolates in log scale (multiplicatively linear)
     static float Eerp(float a, float b)

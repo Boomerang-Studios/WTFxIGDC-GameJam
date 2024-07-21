@@ -16,6 +16,7 @@ public class SceneLoadingManager : Singleton<SceneLoadingManager>
         int nextSceneIndex = CurrentSceneIndex + 1;
         if (nextSceneIndex < GetSceneCount)
         {
+            SoundManager.Instance.PlayMusic();
             UnityEngine.SceneManagement.SceneManager.LoadScene(nextSceneIndex);
         }
         else
@@ -29,6 +30,7 @@ public class SceneLoadingManager : Singleton<SceneLoadingManager>
         int previousSceneIndex = CurrentSceneIndex - 1;
         if (previousSceneIndex >= 0)
         {
+            SoundManager.Instance.PlayMusic();
             UnityEngine.SceneManagement.SceneManager.LoadScene(previousSceneIndex);
         }
         else
@@ -39,11 +41,13 @@ public class SceneLoadingManager : Singleton<SceneLoadingManager>
 
     public void ReloadCurrentScene()
     {
+        SoundManager.Instance.PlayMusic();
         LoadScene(CurrentSceneIndex);
     }
 
     public void LoadScene(int a_Index)
     {
+        SoundManager.Instance.PlayMusic();
         UnityEngine.SceneManagement.SceneManager.LoadScene(a_Index);
     }
 

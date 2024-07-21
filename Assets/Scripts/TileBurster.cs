@@ -103,6 +103,7 @@ public class TileBurster : Singleton<TileBurster>
         if (delay < 1)
             delay = 1;
         yield return new WaitForSeconds(delay);
+        SoundManager.Instance.PlayMusic();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
