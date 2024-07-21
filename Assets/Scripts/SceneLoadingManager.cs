@@ -5,6 +5,12 @@ public class SceneLoadingManager : Singleton<SceneLoadingManager>
     public int CurrentSceneIndex => UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex;
     public int GetSceneCount => UnityEngine.SceneManagement.SceneManager.sceneCountInBuildSettings;
 
+    protected override void Awake()
+    {
+        base.Awake();
+        DontDestroyOnLoad(gameObject);
+    }
+
     public void LoadNextScene()
     {
         int nextSceneIndex = CurrentSceneIndex + 1;
