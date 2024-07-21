@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,9 +10,16 @@ public class TimeBasedTrap : MonoBehaviour
     Animator _animator;
     bool triggered = false;
 
+    public static Action SensorTriggered;
+
     private void OnEnable()
     {
         _animator = GetComponent<Animator>();
+        TimeBasedTrap.SensorTriggered += SwitchTrap;
+    }
+    private void OnDisable()
+    {
+        TimeBasedTrap.SensorTriggered -= SwitchTrap;
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -19,6 +27,7 @@ public class TimeBasedTrap : MonoBehaviour
         {
             triggered = true;
             _animator.SetTrigger("Start");
+            SensorTriggered?.Invoke();
         }
     }
     private void CountDown()
@@ -29,6 +38,12 @@ public class TimeBasedTrap : MonoBehaviour
     {
         SoundManager.Instance.PlaySoundEffect(SFX.SensorBlast);
         TileBurster.Instance.StartBursting();
+        Instantiate(trap, transform.position, Quaternion.identity);
+        transform.parent.gameObject.SetActive(false);
+    }
+    private void SwitchTrap()
+    {
+        if (triggered) return;
         Instantiate(trap, transform.position, Quaternion.identity);
         transform.parent.gameObject.SetActive(false);
     }

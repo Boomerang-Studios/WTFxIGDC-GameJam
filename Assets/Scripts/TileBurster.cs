@@ -24,5 +24,10 @@ public class TileBurster : Singleton<TileBurster>
             collision.GetComponent<TileBurst>().Burst(burstParticleMain);
             m_CameraShake.Shake();
         }
+        if (collision.GetComponent<SpikeTrap>())
+        {
+            collision.GetComponent<SpikeTrap>().Burst(burstParticleMain);
+            m_CameraShake.Shake();
+        }
     }
 }
