@@ -36,8 +36,8 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
     {
         if (_Instance == null)
             _Instance = this as T;
-        //else
-            //Destroy(gameObject);
+        else
+            Destroy(gameObject);
     }
     
     void OnDestroy()

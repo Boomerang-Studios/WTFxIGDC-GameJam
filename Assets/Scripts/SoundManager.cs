@@ -82,8 +82,8 @@ public class SoundManager : Singleton<SoundManager>
 
     protected override void Awake()
     {
-        base.Awake();
-        DontDestroyOnLoad(this);
+            base.Awake();
+            DontDestroyOnLoad(this);
     }
 
     public void PlayTest()
@@ -94,7 +94,10 @@ public class SoundManager : Singleton<SoundManager>
     IEnumerator WaitForSFX(float delay, AudioSource source)
     {
         yield return new WaitForSeconds(delay);
-        Destroy(source.gameObject);
+        if(source != null)
+        {
+            Destroy(source.gameObject);
+        }
     }
     void ToggleAudio(bool mute)
     {

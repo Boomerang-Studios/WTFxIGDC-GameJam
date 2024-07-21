@@ -16,8 +16,7 @@ public class SpikeTrap : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            print("plater ded");
-            //collision.gameObject.GetComponent<Player>().KillPlayer();
+            SceneLoadingManager.Instance.ReloadCurrentScene();
         }
     }
     public void Burst(ParticleSystem burstParticleMain)
