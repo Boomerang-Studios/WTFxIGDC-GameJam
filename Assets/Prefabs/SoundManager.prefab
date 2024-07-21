@@ -202,6 +202,11 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 75e4b39fa8a72874393d7cb135dd0984, type: 3}
     pitchRange: {x: 0.8, y: 1.2}
     volumeMultiplier: 1
+  - sfx: 2
+    clips:
+    - {fileID: 8300000, guid: 3c0bae6af8834744fa8494db944f353d, type: 3}
+    pitchRange: {x: 0.8, y: 1.2}
+    volumeMultiplier: 1
 --- !u!1 &6280791584631340835
 GameObject:
   m_ObjectHideFlags: 0
