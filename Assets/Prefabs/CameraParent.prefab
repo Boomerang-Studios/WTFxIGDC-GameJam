@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   predefinedModel: 0
-  blurSize: 0.7
+  blurSize: 0.15
   blurStrength: 0.6
   bleedingSize: 0.356
   bleedingStrength: 0.356
@@ -226,5 +226,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   leftEdge: {x: 0, y: 0, z: -10}
-  rightEdge: {x: 23.39, y: 0, z: -10}
+  rightEdge: {x: 0, y: 0, z: -10}
   followSpeed: 1

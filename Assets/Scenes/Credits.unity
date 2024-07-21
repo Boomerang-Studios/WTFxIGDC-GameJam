@@ -864,14 +864,6 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1963127394}
-    - target: {fileID: 997687738899680935, guid: f539afb29e1373442aee5e1dddd210d0, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 997687738899680935, guid: f539afb29e1373442aee5e1dddd210d0, type: 3}
-      propertyPath: rightEdge.x
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3187583775705582806, guid: f539afb29e1373442aee5e1dddd210d0, type: 3}
       propertyPath: m_Name
       value: CameraParent
