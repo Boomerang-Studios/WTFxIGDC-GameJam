@@ -1,15 +1,14 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 
-public class ScoreManger : Singleton<ScoreManger>
+public class ScoreManager : Singleton<ScoreManager>
 {
 
     private int _score = 0;
+    public Action<int> OnScoreChanged;
 
-    public TextMeshProUGUI textTmp;
+    public int Score => _score;
+
 
     protected override void Awake()
     {
@@ -19,23 +18,12 @@ public class ScoreManger : Singleton<ScoreManger>
     public void AddScore(int scoreToAdd)
     {
         _score += scoreToAdd;
-        UpdateScoreText();
+        OnScoreChanged?.Invoke(_score);
     }
 
     public void ResetScore()
     {
         _score = 0;
-        UpdateScoreText();
-    }
-
-    private void UpdateScoreText()
-    {
-        textTmp.text = _score.ToString();
-    }
-
-    public int GetScore()
-    {
-        return _score;
     }
 
     public void PlayCollectableEffect(ParticleSystem collectableEffect, Vector3 position)
