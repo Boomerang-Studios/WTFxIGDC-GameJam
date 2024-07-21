@@ -131,6 +131,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1796869596}
     m_Modifications:
+    - target: {fileID: 628845709934177362, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1062578696423310672, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
       propertyPath: m_Name
       value: MainTile1 (48)
@@ -202,6 +206,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1796869596}
     m_Modifications:
+    - target: {fileID: 628845709934177362, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1062578696423310672, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
       propertyPath: m_Name
       value: MainTile1 (37)
@@ -515,6 +523,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1796869596}
     m_Modifications:
+    - target: {fileID: 628845709934177362, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1062578696423310672, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
       propertyPath: m_Name
       value: MainTile1 (32)
@@ -699,6 +711,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1796869596}
     m_Modifications:
+    - target: {fileID: 628845709934177362, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1062578696423310672, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
       propertyPath: m_Name
       value: MainTile1 (35)
@@ -1261,6 +1277,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1796869596}
     m_Modifications:
+    - target: {fileID: 628845709934177362, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1062578696423310672, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
       propertyPath: m_Name
       value: MainTile1 (40)
@@ -1536,6 +1556,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1796869596}
     m_Modifications:
+    - target: {fileID: 628845709934177362, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1062578696423310672, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
       propertyPath: m_Name
       value: MainTile1 (51)
@@ -1726,6 +1750,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1796869596}
     m_Modifications:
+    - target: {fileID: 628845709934177362, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1062578696423310672, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
       propertyPath: m_Name
       value: MainTile1 (38)
@@ -1919,6 +1947,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1796869596}
     m_Modifications:
+    - target: {fileID: 628845709934177362, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1062578696423310672, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
       propertyPath: m_Name
       value: MainTile1 (49)
@@ -2256,6 +2288,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1796869596}
     m_Modifications:
+    - target: {fileID: 628845709934177362, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1062578696423310672, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
       propertyPath: m_Name
       value: MainTile1 (33)
@@ -2337,6 +2373,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1796869596}
     m_Modifications:
+    - target: {fileID: 628845709934177362, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1062578696423310672, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
       propertyPath: m_Name
       value: MainTile1 (52)
@@ -2408,6 +2448,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1796869596}
     m_Modifications:
+    - target: {fileID: 628845709934177362, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1062578696423310672, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
       propertyPath: m_Name
       value: MainTile1 (34)
@@ -2531,6 +2575,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1796869596}
     m_Modifications:
+    - target: {fileID: 628845709934177362, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1062578696423310672, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
       propertyPath: m_Name
       value: MainTile1 (53)
@@ -7932,6 +7980,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1796869596}
     m_Modifications:
+    - target: {fileID: 628845709934177362, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1062578696423310672, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
       propertyPath: m_Name
       value: MainTile1 (57)
@@ -8185,6 +8237,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1796869596}
     m_Modifications:
+    - target: {fileID: 628845709934177362, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1062578696423310672, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
       propertyPath: m_Name
       value: MainTile1 (45)
@@ -8549,6 +8605,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1796869596}
     m_Modifications:
+    - target: {fileID: 628845709934177362, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1062578696423310672, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
       propertyPath: m_Name
       value: MainTile1 (58)
@@ -8682,6 +8742,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1796869596}
     m_Modifications:
+    - target: {fileID: 628845709934177362, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1062578696423310672, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
       propertyPath: m_Name
       value: MainTile1 (36)
@@ -8748,6 +8812,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1796869596}
     m_Modifications:
+    - target: {fileID: 628845709934177362, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1062578696423310672, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
       propertyPath: m_Name
       value: MainTile1 (56)
@@ -8942,6 +9010,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1796869596}
     m_Modifications:
+    - target: {fileID: 628845709934177362, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1062578696423310672, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
       propertyPath: m_Name
       value: MainTile1 (54)
@@ -9137,6 +9209,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1796869596}
     m_Modifications:
+    - target: {fileID: 628845709934177362, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1062578696423310672, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
       propertyPath: m_Name
       value: MainTile1 (50)
@@ -9203,6 +9279,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1796869596}
     m_Modifications:
+    - target: {fileID: 628845709934177362, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1062578696423310672, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
       propertyPath: m_Name
       value: MainTile1 (44)
@@ -9269,6 +9349,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1796869596}
     m_Modifications:
+    - target: {fileID: 628845709934177362, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1062578696423310672, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
       propertyPath: m_Name
       value: MainTile1 (42)
@@ -9335,6 +9419,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1796869596}
     m_Modifications:
+    - target: {fileID: 628845709934177362, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1062578696423310672, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
       propertyPath: m_Name
       value: MainTile1 (47)
@@ -9411,6 +9499,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1796869596}
     m_Modifications:
+    - target: {fileID: 628845709934177362, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1062578696423310672, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
       propertyPath: m_Name
       value: MainTile1 (43)
@@ -9477,6 +9569,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1796869596}
     m_Modifications:
+    - target: {fileID: 628845709934177362, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1062578696423310672, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
       propertyPath: m_Name
       value: MainTile1 (46)
@@ -9543,6 +9639,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1796869596}
     m_Modifications:
+    - target: {fileID: 628845709934177362, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1062578696423310672, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
       propertyPath: m_Name
       value: MainTile1 (41)
@@ -10660,6 +10760,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1796869596}
     m_Modifications:
+    - target: {fileID: 628845709934177362, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1062578696423310672, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
       propertyPath: m_Name
       value: MainTile1 (55)
@@ -10746,6 +10850,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1796869596}
     m_Modifications:
+    - target: {fileID: 628845709934177362, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1062578696423310672, guid: 9e445b2dec2594845ac3d68b52add002, type: 3}
       propertyPath: m_Name
       value: MainTile1 (39)
