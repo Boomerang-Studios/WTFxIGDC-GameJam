@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum SFX
 {
@@ -50,6 +52,11 @@ public class SoundManager : Singleton<SoundManager>
         if (m_sfxSource == null)
             m_sfxSource = GetComponent<AudioSource>();
         TimeBasedTrap.SwitchToSpike += SwitchToExplosion;
+      
+    }
+    private void OnLevelWasLoaded()
+    {
+        PlayMusic();
     }
     private void OnDisable()
     {
