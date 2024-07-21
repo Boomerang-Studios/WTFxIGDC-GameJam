@@ -2,10 +2,6 @@ using UnityEngine;
 
 public class TileBurster : Singleton<TileBurster>
 {
-    private void Awake()
-    {
-        Instance = this;
-    }
     public ParticleSystem burstParticleMain;
     public float speed;
 
