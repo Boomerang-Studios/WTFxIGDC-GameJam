@@ -12,7 +12,14 @@ public class BombTrap : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             // add Fuse Effect here
+            StartCoroutine(ExplodeAfterDelay());
         }
+    }
+    
+    private IEnumerator ExplodeAfterDelay()
+    {
+        yield return new WaitForSeconds(_fuseTime);
+        Explode();
     }
     
     private void Explode()
