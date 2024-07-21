@@ -14812,8 +14812,8 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
+  m_Volume: 0.75
+  m_Pitch: 0.9
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -14917,10 +14917,10 @@ MonoBehaviour:
   _launchParticles: {fileID: 2031231740067542153}
   _moveParticles: {fileID: 6982310650192458759}
   _landParticles: {fileID: 6129464918991038043}
-  _footsteps:
-  - {fileID: 8300000, guid: 5d94063f45167b04ab62585e436da58c, type: 3}
-  - {fileID: 8300000, guid: b5803c17557c59c40bf3a6d69cb46cb3, type: 3}
-  - {fileID: 8300000, guid: 1876767bf7cbf284394dc3817af9593c, type: 3}
+  _land:
+  - {fileID: 8300000, guid: b1f5a5921a732944aaeb36192d084258, type: 3}
+  _jump:
+  - {fileID: 8300000, guid: d04ac5774ad3bad4b9ab0ba2d6ac4347, type: 3}
 --- !u!1 &4757126129963401553
 GameObject:
   m_ObjectHideFlags: 0
