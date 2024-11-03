@@ -8,7 +8,6 @@ public class TileBurster : Singleton<TileBurster>
 {
     public ParticleSystem burstParticleMain;
     public float speed;
-    [SerializeField] CameraShake m_CameraShake;
 
     private List<Transform> tiles = new List<Transform>();
 
@@ -55,12 +54,12 @@ public class TileBurster : Singleton<TileBurster>
         {
             tiles.Add(collision.transform);
             tileBurst.Burst(burstParticleMain);
-            m_CameraShake.Shake();
+            CameraShake.instance.Shake();
         }
         if (collision.GetComponent<SpikeTrap>())
         {
             collision.GetComponent<SpikeTrap>().Burst(burstParticleMain);
-            m_CameraShake.Shake();
+            CameraShake.instance.Shake();
         }
     }
 

@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public enum SFX
 {
-    UIClick, BlockExplode, GameOver, GameStart, Trap, Collectable, CountDown, SensorBlast
+    UIClick, BlockExplode, GameOver, GameStart, Trap, Collectable, CountDown, SensorBlast, Jump, Dash
 }
 [System.Serializable]
 public class Sounds
@@ -177,10 +177,10 @@ public class SoundManager : Singleton<SoundManager>
         m_musicSource.volume = bgmVolume;
         m_musicSource.Play();
     }
-    // interpolates in log scale (multiplicatively linear)
+    // interpolates in log scale (multiplicatively linear) by @FreyaHolmer
     static float Eerp(float a, float b)
     {
-        float t = Random.Range(0, 1);
-        return a * System.MathF.Exp(t * System.MathF.Log(b / a));
+        float t = Random.Range(0f, 1f);
+        return a * Mathf.Exp(t * Mathf.Log(b / a));
     }
 }

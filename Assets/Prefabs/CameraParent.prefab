@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 160384162175126831}
   - component: {fileID: 2136627067368928537}
   - component: {fileID: 1446701144979056094}
-  - component: {fileID: 7618584649326636236}
+  - component: {fileID: 5063876948843178254}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -165,7 +165,7 @@ MonoBehaviour:
     anchor: 0
     vectorAnchor: {x: 0.5, y: 0.5}
   letterBoxCamera: {fileID: 0}
---- !u!114 &7618584649326636236
+--- !u!114 &5063876948843178254
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -174,11 +174,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1371025639423985878}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fffb230c88cc7642bdb5289f1c960f2, type: 3}
+  m_Script: {fileID: 11500000, guid: 501e24e5229f5d14589d637fcfb4bbf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  magnitude: 0.1
-  duration: 0.3
+  targetCamera: {fileID: 1371065543733935383}
+  defaultStats:
+    _magnitude: 0.25
+    _duration: 0.15
 --- !u!1 &3187583775705582806
 GameObject:
   m_ObjectHideFlags: 0
@@ -188,7 +190,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6882823038769315181}
-  - component: {fileID: 997687738899680935}
+  - component: {fileID: 7865908376454482255}
   m_Layer: 0
   m_Name: CameraParent
   m_TagString: Untagged
@@ -212,7 +214,7 @@ Transform:
   - {fileID: 6465515765398259763}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &997687738899680935
+--- !u!114 &7865908376454482255
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -221,10 +223,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3187583775705582806}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a5b1f6c4db48614d81ea5546b97b34f, type: 3}
+  m_Script: {fileID: 11500000, guid: cff0d8617139bb84581940056837b657, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  leftEdge: {x: 0, y: 0, z: -10}
-  rightEdge: {x: 0, y: 0, z: -10}
-  followSpeed: 1
+  smoothTime: 0.25
+  horizontalClamp: {x: 0, y: 0}
+  vertcialClamp: {x: 0, y: 0}

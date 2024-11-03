@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3721631001414584552}
   - component: {fileID: 6447706773010115188}
   - component: {fileID: 1261527924919333030}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -157,7 +157,7 @@ GameObject:
   - component: {fileID: 949196709596033059}
   - component: {fileID: 6923380595682089183}
   - component: {fileID: 3962408770294928092}
-  m_Layer: 6
+  m_Layer: 2
   m_Name: Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}

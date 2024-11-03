@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1869338325411037799}
   - component: {fileID: 4477385079946186587}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Sensor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 1759455963046804419}
   - component: {fileID: 8487732282434982821}
   - component: {fileID: 3872003824388832609}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -205,7 +205,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trap: {fileID: 5801904493700737653, guid: 80ae0dd603289044895a4e349a8e01f2, type: 3}
-  _triggerTime: 3
 --- !u!58 &3872003824388832609
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -250,7 +249,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3463308443166552494}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Proximity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
